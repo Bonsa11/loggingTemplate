@@ -10,17 +10,8 @@ def create_logger(file: str, name: str, level: str):
     logger = logging.getLogger(name)
 
     # set logging level
-    if level == 'DEBUG':
+    if level in {'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'}:
         logger.setLevel(logging.DEBUG)
-    elif level == 'INFO':
-        logger.setLevel(logging.DEBUG)
-    elif level == 'WARNING':
-        logger.setLevel(logging.DEBUG)
-    elif level == 'ERROR':
-        logger.setLevel(logging.DEBUG)
-    elif level == 'CRITICAL':
-        logger.setLevel(logging.DEBUG)
-
     # create a file to store logs
     logfile = logging.FileHandler(file)
 
