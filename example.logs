@@ -1,0 +1,4 @@
+2022-06-28 14:53:42,277 - __main__ - DEBUG - trying to divide test by 7
+2022-06-28 14:53:42,277 - __main__ - ERROR - failed to divide test by 7 : unsupported operand type(s) for /: 'str' and 'int'
+2022-06-28 14:53:42,277 - __main__ - DEBUG - trying to divide 7 by 0
+2022-06-28 14:53:42,278 - __main__ - ERROR - failed to divide 7 by 0 : division by zero
